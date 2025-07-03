@@ -108,9 +108,9 @@ const config = {
             title: 'Recursos',
             items: [
               { label: 'Documentación de Vektor', to: '/docs/vektor/overview' },
-              { label: 'MCP Dashboards', to: '/docs/vektor/modules/mcp_dashboards' },
-              { label: 'MCP Supabase', to: '/docs/vektor/modules/mcp_supabase' },
-              { label: 'MCP Weather', to: '/docs/vektor/modules/mcp_weather' },
+              { label: 'MCP Dashboards', to: '/docs/vektor/modulos/mcp_dashboards' },
+              { label: 'MCP Supabase', to: '/docs/vektor/modulos/mcp_supabase' },
+              { label: 'MCP Weather', to: '/docs/vektor/modulos/mcp_weather' },
               { label: 'API', to: '/docs/vektor/api/endpoints' },
               { label: 'GitHub', href: 'https://github.com/Xingsandesu/Vektor' },
             ],
