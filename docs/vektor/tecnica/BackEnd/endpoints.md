@@ -2,18 +2,18 @@
 title: Endpoints de la API Vektor  
 sidebar_position: 1  
 ---
-
+:::info
 # 📋 Endpoints de la API Vektor
-
+:::
 Accede de forma interactiva a la documentación y prueba cada ruta en tu navegador:
 
 - Swagger UI 
 - ReDoc
 
 ---
-
+:::info
 ## 📑 Tabla de contenidos
-
+:::
 1. 🔐 Autenticación  
 2. 💬 Chat  
 3. 👤 Usuarios  
@@ -22,9 +22,9 @@ Accede de forma interactiva a la documentación y prueba cada ruta en tu navegad
 6. 📊 Sistema y Monitoreo  
 
 ---
-
+:::info
 ## 🔐 Autenticación
-
+:::
 ### POST /auth/login — Obtener token JWT  
 **Descripción:** Autentica al usuario con sus credenciales y devuelve un token Bearer.  
 **Request:**  
@@ -106,9 +106,9 @@ POST /auth/logout
 **Probar en Swagger:** `/docs#/auth/logout`
 
 ---
-
+:::info
 ## 💬 Chat
-
+:::
 ### POST /chat/stream — SSE chat streaming  
 **Descripción:** Inicia una conversación en tiempo real; responde mediante Server-Sent Events (SSE).  
 **Request (JSON):**  
@@ -183,9 +183,9 @@ es.onerror   = err => console.error('Error SSE', err);
 **Probar en Swagger:** `/docs#/chat/models`
 
 ---
-
+:::info
 ## 👤 Usuarios
-
+:::
 ### GET /users/me — Perfil actual  
 **Descripción:** Devuelve los datos del usuario autenticado.  
 **Response (200):**  
@@ -266,9 +266,9 @@ es.onerror   = err => console.error('Error SSE', err);
 **Probar en Swagger:** `/docs#/users/put_users_preferences`
 
 ---
-
+:::info
 ## 🔄 Sincronización
-
+:::
 ### GET /sync/sessions — Sesiones sincronizadas  
 **Descripción:** Lista las sesiones activas en otros dispositivos.  
 **Response (200):**  
@@ -314,9 +314,9 @@ es.onerror   = err => console.error('Error SSE', err);
 ```
 
 ---
-
+:::info
 ## ⚙️ Configuración
-
+:::
 ### GET /config/models — Configuración de modelos  
 **Descripción:** Devuelve `model_configs.json` con LLM disponibles.  
 **Response (200):**  
@@ -365,9 +365,9 @@ es.onerror   = err => console.error('Error SSE', err);
 ```
 
 ---
-
+:::info
 ## 📊 Sistema y Monitoreo
-
+:::
 ### GET /health — Verificación de salud  
 **Descripción:** Retorna estado general:  
 ```json

@@ -18,6 +18,8 @@
   --ifm-color-secondary-light: #51e066;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(255, 136, 0, 0.08);
+  --img-shadow-color: rgba(216, 140, 0, 0.678);
+
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -33,4 +35,65 @@
   --ifm-color-secondary-dark: #2ecc40;
   --ifm-color-secondary-light: #a3f7b5;
   --docusaurus-highlighted-code-line-bg: rgba(255, 136, 0, 0.18);
+  --img-shadow-color: rgba(2, 184, 57, 0.575);
+}
+
+.markdown img {
+  border-radius: 12px;
+  box-shadow: 0 4px 8px var(--img-shadow-color);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.markdown img:hover {
+  box-shadow: 8px 8px 16px var(--img-shadow-color);
+  transform: scale(1.02);
+}
+
+/* 1. Importar Poppins desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* 2) Sobrescribe las variables de Infima */
+:root {
+  /* Fuente base para párrafos, listas, etc. */
+  --ifm-font-family-base: 'Open Sans', sans-serif;
+
+  /* Fuente para encabezados H1–H6 */
+  --ifm-font-family-headings: 'Montserrat', sans-serif;
+
+  /* Opcional: tamaño y peso por defecto */
+  --ifm-font-size-base: 1rem;       /* 16px */
+  --ifm-font-size-h1: 2.5rem;       /* 40px */
+  --ifm-font-size-h2: 2rem;         /* 32px */
+  --ifm-heading-font-weight: 700;
+  --ifm-font-weight-base: 400;
+
+  /* Monospace para bloques de código */
+  --ifm-font-family-monospace: 'Source Code Pro', monospace;
+}
+
+/* 3) Si quieres afinar aún más algún elemento concreto */
+.markdown h1 {
+  letter-spacing: -0.02em;
+}
+
+.markdown p {
+  line-height: 1.6;
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+}
+a::after {
+  content: '';
+  position: absolute;
+  transform: translateX(0%);
+  left: 50%; bottom: 0px;
+  width: 0px; height: 2px;
+  background: var(--ifm-color-primary);
+  transition: width 0.3s ease, left 0.3s ease;
+}
+a:hover::after {
+  width: 100%;
+  left: 0%;
 }
