@@ -1,6 +1,6 @@
 # Vektor Website
 
-Este repositorio contiene la documentación MIJIN y el sitio web oficial para la plataforma Vektor, una plataforma de Agentes de IA. El sitio web está construido con [Docusaurus](https://docusaurus.io/), un moderno generador de sitios estáticos.
+Este repositorio contiene la documentación Parce y el sitio web oficial para la plataforma Vektor, una plataforma de Agentes de IA. El sitio web está construido con [Docusaurus](https://docusaurus.io/), un moderno generador de sitios estáticos.
 
 ## Estructura del Proyecto
 
