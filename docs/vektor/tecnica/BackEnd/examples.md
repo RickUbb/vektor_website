@@ -1,10 +1,10 @@
 ---
-title: Ejemplos de Uso de la API
+title: Ejemplos de Uso de la API 🧡
 sidebar_position: 2
 ---
-
+:::info
 # Ejemplos de Uso de la API
-
+:::
 ## Login y chat básico
 
 ```python
