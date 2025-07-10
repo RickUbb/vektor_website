@@ -20,8 +20,10 @@ Vektor Backend es una robusta API basada en FastAPI que impulsa la plataforma de
 - Sincronización de sesiones en múltiples dispositivos
 - Manejo asíncrono de alto rendimiento
 - Logs estructurados con rotación y compresión
-
+<center>
 ![Arquitectura del Backend de Vektor](img/vektor_backend_raiz.png)
+![Arquitectura del Backend de Vektor](img/backend_contenedores_agents.jpg)
+</center>
 ```
 ```
 :::info
