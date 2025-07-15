@@ -18,6 +18,7 @@ const config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
+<<<<<<< HEAD
   url: "https://your-docusaurus-site.example.com",
   baseUrl: "/",
 
@@ -25,6 +26,20 @@ const config = {
   projectName: "docusaurus",    // Usually your repo name.
 
   onBrokenLinks: "warn", // Cambiado de "throw" a "warn"
+=======
+  // Set the production url of your site here
+  url: "https://vektor-website-hagx.vercel.app/", // Cambia esto por tu URL de Vercel
+  // Set the /<baseUrl>/ pathname under which your site is served
+  // For GitHub pages deployment, it is often '/<projectName>/'
+  baseUrl: "/",
+
+  // GitHub pages deployment config.
+  // If you aren't using GitHub pages, you don't need these.
+  organizationName: "RickUbb", // Tu nombre de usuario de GitHub
+  projectName: "vektor_website", // El nombre de tu repositorio
+
+  onBrokenLinks: "warn",
+>>>>>>> manual-usuario
   onBrokenMarkdownLinks: "warn",
 
   i18n: {
@@ -39,6 +54,11 @@ const config = {
       ({
         docs: {
           sidebarPath: "./sidebars.js",
+<<<<<<< HEAD
+=======
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+>>>>>>> manual-usuario
           editUrl:
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
@@ -50,9 +70,16 @@ const config = {
           },
           editUrl:
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+<<<<<<< HEAD
           onInlineTags: "warn",
           onInlineAuthors: "warn",
           onUntruncatedBlogPosts: "ignore", // Ignora warning por falta de truncate
+=======
+          // Useful options to enforce blogging best practices
+          onInlineTags: "warn",
+          onInlineAuthors: "warn",
+          onUntruncatedBlogPosts: "warn",
+>>>>>>> manual-usuario
         },
         theme: {
           customCss: "./src/css/custom.css",
@@ -64,6 +91,10 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+<<<<<<< HEAD
+=======
+      // Replace with your project's social card
+>>>>>>> manual-usuario
       image: "img/docusaurus-social-card.jpg",
       navbar: {
         title: "Vektor",
@@ -80,7 +111,11 @@ const config = {
           },
           { to: "/blog", label: "Blog", position: "left" },
           {
+<<<<<<< HEAD
             href: "https://github.com/Xingsandesu/Vektor",
+=======
+            href: "https://github.com/Snayderstone/vektor_website",
+>>>>>>> manual-usuario
             label: "GitHub",
             position: "right",
           },
